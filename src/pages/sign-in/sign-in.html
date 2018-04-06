@@ -1,0 +1,57 @@
+<!--
+  Generated template for the SignInPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>{{ 'SignInPage.Title' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <div class="logo-container">
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <div class="form-header" text-center>
+                        <img src="assets/images/login_logo.png" alt="">
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div class="form-container">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-auto>
+                    <ion-icon name="contact-outline"></ion-icon>
+                </ion-col>
+                <ion-col>
+                    <ion-input type="text" name="email" [placeholder]="'SignInPage.Email' | translate" [(ngModel)]="model.Email"></ion-input>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-auto>
+                    <ion-icon name="unlock-outline"></ion-icon>
+                </ion-col>
+                <ion-col>
+                    <ion-input type="password" name="password" [placeholder]="'SignInPage.Password' | translate" [(ngModel)]="model.Password"></ion-input>
+                </ion-col>
+                <ion-col col-auto>
+                    <ion-icon name="log-in" (click)="signIn()"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <!-- <div class="form-footer" text-center>
+        Welcome to use iOrders IAMA
+    </div> -->
+</ion-content>
+<ion-footer>
+    <img src="assets/images/abb.png" alt="logo">
+</ion-footer>
+<check-version-popup #child (toTouchIDLogin)="touchIDLogin($event)"></check-version-popup>
+

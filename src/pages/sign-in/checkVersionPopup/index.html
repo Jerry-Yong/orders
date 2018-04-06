@@ -1,0 +1,22 @@
+
+<div class="checkVersionPopup" *ngIf="showCheckAlertFlag">
+    <div class="checkVersion_shadow"></div>
+    <div class="checkVersion_popup">
+        <div class="version_alert">
+            <div class="alert_head">
+                <div class="title">{{checkVersionPopupTitle}}</div>
+            </div>
+            <div class="alert_body">
+                <div class="" *ngFor="let data of checkVersionPopupMessage">
+                    <div class="">{{data}}</div>
+                </div>
+            </div>
+            <div class="alert_foot">
+                <div class="btnBox" *ngFor="let data of checkVersionPopupBtn">
+                    <button (click)="versionClick(data)">{{data.Name}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

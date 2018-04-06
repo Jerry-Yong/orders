@@ -1,0 +1,80 @@
+<!--
+  Generated template for the SalesOrderItemDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons start *ngIf="isSignIn" >
+      <button ion-button icon-only (click)="openMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ salesOrderNumber }} - {{salesOrderItemNumber}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-round-down" refreshingSpinner="dots">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div class="container">
+    <ion-grid>
+      <ion-row class="no-line">
+        <ion-col class="label longText">{{ 'SalesOrderItemDetailPage.Manufacture' | translate }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label-value longText">{{data.Manufacture}}</ion-col>
+      </ion-row>
+      <ion-row class="no-line">
+        <ion-col class="label longText">{{ 'SalesOrderItemDetailPage.MeterCode' | translate }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label-value longText">{{data.MeterCode}}</ion-col>
+      </ion-row>
+      <ion-row class="no-line">
+        <ion-col class="label longText">{{ 'SalesOrderItemDetailPage.CustomerName' | translate }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label-value longText">{{data.CustomerName}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.CreatedDate' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.OrderCreatedDate|date:"yyyy-MM-dd"}}</ion-col>
+      </ion-row>
+      <!-- <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.ReleasedDate' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.ReleaseDate|date:"yyyy-MM-dd"}}</ion-col>
+      </ion-row> -->
+      <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.EstimatedExworkDate' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.EstimatedExWorkDate|date:"yyyy-MM-dd"}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.RequiredDeliveryDate' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.RequiredDeliveryDate|date:"yyyy-MM-dd"}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.TotalQuantity' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.TotalQuantity| number:'1.0-3'}} {{data.Unit}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.FinishedQuantity' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.FinishedQuantity| number:'1.0-3'}} {{data.Unit}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.IntoWarehouseDate' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.IntoWarehouseDate|date:"yyyy-MM-dd"}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.ShippingQuantity' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.ShippingQuantity| number:'1.0-3'}} {{data.Unit}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="label">{{ 'SalesOrderItemDetailPage.ShippingDate' | translate }}</ion-col>
+        <ion-col class="label-value">{{data.ShippingDate|date:"yyyy-MM-dd"}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

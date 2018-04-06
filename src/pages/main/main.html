@@ -1,0 +1,36 @@
+<ion-menu class="menu" side="left" id="left" swipeEnabled="false" [content]="content">
+    <ion-header>
+        <ion-toolbar class="header-container" color="primary" *ngIf="signInUser">
+            <span>
+                <img src="{{signInUser.Avatar}}">
+            </span>
+            <ion-title>{{signInUser.DisplayName}}</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <button menuClose ion-item (click)="openPage('FavoritePage')">
+                <ion-icon item-left name="ios-star-outline"></ion-icon>
+                {{'Menu.FavoritePage'|translate}}
+            </button>
+            <button menuClose ion-item (click)="openPage('QuickSearchPage')">
+                <ion-icon item-left name="ios-search-outline"></ion-icon>
+                {{'Menu.QuickSearchPage'|translate}}
+            </button>
+            <button menuClose ion-item (click)="openPage('SettingPage')">
+                <ion-icon item-left name="ios-settings-outline"></ion-icon>
+                {{'Menu.SettingPage'|translate}}
+            </button>
+            <button menuClose ion-item (click)="openPage('AboutPage')">
+                <ion-icon item-left name="ios-information-circle-outline"></ion-icon>
+                {{'Menu.AboutPage'|translate}}
+            </button>
+            <button menuClose ion-item (click)="logout()">
+                <ion-icon item-left name="ios-exit-outline"></ion-icon>
+                {{'Menu.Logout'|translate}}
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

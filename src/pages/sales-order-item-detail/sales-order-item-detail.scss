@@ -1,0 +1,17 @@
+page-sales-order-item-detail {
+  .container {
+    ion-row {
+      line-height: 2em;
+      border-bottom: 0.55px solid #c8c7cc;
+    }
+    .label {}
+    .label-value {
+      color: #888888;
+      text-align: right;
+    }
+    .longText {
+      min-width: 320px;
+      text-align: left;
+    }
+  }
+}

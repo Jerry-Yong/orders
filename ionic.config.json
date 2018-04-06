@@ -1,0 +1,8 @@
+{
+  "name": "ABB.Orders.IAMA",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

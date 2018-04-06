@@ -1,0 +1,36 @@
+page-customer-search {
+  .form-container {
+    ion-icon {
+      font-size: 3.5rem;
+      min-width: 30px;
+      color: #c9c9cf;
+    }
+    ion-row {
+      border-bottom: 1px solid #f0f0f0;
+      margin: 0px 25px 0px;
+    }
+  }
+  .form-footer {
+    margin: 0px 30px;
+    margin-top: 60px;
+  }
+  .form-footer .form-line {
+    height: 1px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+  }
+  .form-footer .form-line span {
+    position: relative;
+    top: -10px;
+    background: #fff;
+    display: inline-block;
+    color: #c9c9cf;
+    padding: 0 20px;
+  }
+  .form-footer .form-buttons {
+    margin-top: 20px;
+  }
+  .form-footer .form-buttons button {
+    background-color: #D90000;
+  }
+}

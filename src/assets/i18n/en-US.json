@@ -1,0 +1,189 @@
+{
+    "AboutPage": {
+        "Title": "About",
+        "ScanQRCodeTip":"Ask your colleague to scan the QR code to get iOrders IAMA on their phone.",
+        "Language": "Language",
+        "Introduction": "Introduction",
+        "FAQ": "FAQ"
+    },
+    "CustomerDashboardPage": {
+        "Title": "Customer Dashboard",
+        "LoadCustomerDashboardFailedForFavorite":"Cannot get customer name, save to favorite failed",
+        "LoadCustomerDashboardFailedForNavigation":"Cannot get customer address, failed to navigate",
+        "LoadMapFailed": "Load map failed",
+        "StartBaiduMap": "Baidu Map",
+        "StartAMap": "Amap",
+        "StartGoogleMap": "Google Map",
+        "StartBaiduMapError": "Baidu Map not installed",
+        "StartAMapError": "Amap not installed",
+        "StartGoogleMapError": "Google Map not installed",
+        "OrderCreatedFrom": "Order Created from {{startDate}} to {{endDate}}",
+        "Orders": "Orders",
+        "OrderItems": "Order Items",
+        "Products": "Products",
+        "OrderHasProductsShipped": "Order has products shipped in three month",
+        "ShippedOrders": "Shipped Orders",
+        "ShippedOrderItems": "Order Items",
+        "ShippedProducts": "Products",
+        "UnCompletedOrders": "Uncompleted Orders",
+        "CompletedOrders": "Completed Orders"
+    },
+    "CustomerSearchPage": {
+        "Title": "iOrders IAMA",
+        "CustomerCode": "Customer Code",
+        "PurchaseOrderNumber": "Purchase Order Number",
+        "Or": "OR",
+        "ABBEmployeeSignIn": "ABB Employee Sign In",
+        "CustomerCodeRequired": "Customer Code is required",
+        "PurchaseOrderNumberRequired": "Purchase Order Number is required"
+    },
+    "FaqPage": {
+        "Title": "FAQ"
+    },
+    "FavoritePage": {
+        "Title": "My Favorites",
+        "Search":"Search",
+        "FavoriteCustomer": "Favorite Customer",
+        "FavoriteOrders": "Favorite Orders",
+        "FavoriteItems": "Favorite Items",
+        "NoData": "Not Found"
+    },
+    "IntroductionPage": {
+        "Title": "Introduction",
+        "Description":"iOrders IAMA is a quick solution for you to tracking order status through mobile device. Within this app, ABB users and customers will have a good corporation on order control and shipping management."
+    },
+    "QuickSearchPage": {
+        "Title": "Quick Search",
+        "CustomerName": "Customer Name",
+        "SalesPerson": "Sales Person",
+        "PurchaseOrderNumber": "Purchase Order Number",
+        "SalesOrderNumber": "Sales Order Number",
+        "CustomerNameRequired": "Customer Name is required",
+        "SalesPersonRequired": "Sales Person is required",
+        "PurchaseOrderNumberRequired": "Purchase Order Number is required",
+        "SalesOrderNumberRequired": "Sales Order Number is required",
+        "SearchHistory": "Search History",
+        "ClearHistory": "Clear History"
+    },
+    "SalesOrderPage": {
+        "Title": "Sales Order",
+        "CustomerName": "Customer Name",
+        "SalesOrderCreateDate": "SalesOrder Create Date",
+        "CountryOrArea": "Country Or Area",
+        "SalesPerson": "Sales Person",
+        "All": "All",
+        "StartDate": "Start Date",
+        "EndDate": "End Date",
+        "SalesOrderCreateDate1": "in 3 month",
+        "SalesOrderCreateDate2": "past half year",
+        "SalesOrderCreateDate3": "half to 1 year",
+        "SalesOrderCreateDate4": "order than 1 year",
+        "CustomerNameASC": "Customer Name",
+        "SalesOrderNumberDESC": "SO Number Desc",
+        "SalesOrderNumberASC": "SO Number Asc",
+        "OrderCreatedDateDESC": "SO Created Date Desc",
+        "OrderCreatedDateASC": "SO Created Date Asc",
+        "UnCompleted": "Uncompleted",
+        "Completed": "Completed",
+        "NoData": "Not Found"
+    },
+    "SalesOrderItemPage": {
+        "Title": "Order Items",
+        "SalesOrderItemNumber": "SalesOrder Item Number",
+        "MeterCode": "Meter Code",
+        "EstimatedExWorkDate": "Estimated Ex-Work Date",
+        "StartDate": "Start Date",
+        "EndDate": "End Date",
+        "EstimatedExWorkDate1": "Last 1 month",
+        "EstimatedExWorkDate2": "Next 3 month",
+        "ShippedDate": "Shipped Date",
+        "ShippingDate1": "Last 3 month",
+        "ShippingDate2": "Past half year",
+        "SalesOrderItemNumberDESC": "SO Item Desc",
+        "SalesOrderItemNumberASC": "SO Item Asc",
+        "EstimatedExWorkDateDESC": "Est. Ex-Work Date Desc",
+        "EstimatedExWorkDateASC": "Est. Ex-Work Date Asc",
+        "All": "All",
+        "OnPlan": "On-Plan",
+        "WIP": "WIP",
+        "Finished": "Finished",
+        "Shipped": "Shipped",
+        "PlanExWorkOn":"Plan ex-work on",
+        "NoData": "Not Found"
+    },
+    "SalesOrderItemDetailPage": {
+        "Manufacture": "Manufacture",
+        "MeterCode": "Meter Code",
+        "CustomerName": "Customer Name",
+        "CreatedDate": "PMU Order Release Date",
+        "ReleasedDate": "Released Date",
+        "EstimatedExworkDate": "Estimated Ex-work Date",
+        "RequiredDeliveryDate": "Required Delivery Date",
+        "TotalQuantity": "Total Quantity",
+        "FinishedQuantity": "Finished Quantity",
+        "IntoWarehouseDate": "Into Warehouse Date",
+        "ShippingQuantity": "Shipping Quantity",
+        "ShippingDate": "Shipping Date"
+    },
+    "SettingPage": {
+        "Title": "Settings",
+        "Language": "Language",
+        "TouchID": "Touch ID",
+        "DefaultPage": "Default Page"
+    },
+    "SignInPage": {
+        "Title": "iOrders IAMA",
+        "Email": "Email",
+        "Password": "Password",
+        "EmailRequired": "Email is required",
+        "PasswordRequired": "Password is required",
+        "SignInFailed": "Email or password is incorrect",
+        "TokenExpired": "Please login by password",
+        "EnableFingerprint": "Do you want to enable login with touchID/fingerprint next time?"
+    },
+    "Menu": {
+        "FavoritePage": "My Favorites",
+        "QuickSearchPage": "Quick Search",
+        "SettingPage": "Settings",
+        "AboutPage": "About",
+        "Logout": "Logout"
+    },
+    "Common": {
+        "CheckForUpdate": "Check for Updates",
+        "AddFavoriteSuccess": "Add favorite successfully",
+        "AddFavoriteFailed": "Add favorite failed",
+        "DeleteFavoriteSuccess": "Delete favorite successfully",
+        "DeleteFavoriteFailed": "Delete favorite failed",
+        "ShareFailed": "Share failed",
+        "QRCodeScanFailed": "QR Code can not be identified",
+        "QRCodeFormatFailed": "QR Code format is incorrect",
+        "FingerprintTip":"Scan fingerprint to login"
+    },
+    "Languages": [{
+        "Name": "English",
+        "Value": "en-US"
+    }, {
+        "Name": "Chinese",
+        "Value": "zh-CN"
+    }],
+    "DefaultPages": [{
+        "Name": "Quick Search",
+        "Value": "QuickSearchPage"
+    }, {
+        "Name": "My Favorites",
+        "Value": "FavoritePage"
+    }],
+    "Loading": "Loading...",
+    "PullingText": "Pull to refresh",
+    "RefreshingText": "Refreshing...",
+    "CancelButtonText": "Cancel",
+    "YesButtonText": "Yes",
+    "OKButtonText": "OK",
+    "ResetButtonText": "Reset",
+    "OkeyButtonText": "OK",
+    "InstallButtonText": "Install",
+    "TakePhoto": "Take Photo",
+    "SeletFromLibrary": "Selete from libary",
+    "CheckVersionTitle":"New Version",
+    "TimeoutText":"Sorry, request timeout"
+}

@@ -1,0 +1,37 @@
+
+<ion-list>
+    <ion-item-group *ngFor="let group of data;let groupIndex=index">
+        <ion-item-divider *ngIf="group.Type==0&&group.Items.length>0" tappable (click)="toggleGroup(group.Type)">
+            {{ 'FavoritePage.FavoriteCustomer' | translate }}
+            <span class="item-options">
+                <ion-icon small [name]="group.Expaned?'arrow-up-outline':'arrow-down-outline'"></ion-icon>
+            </span>
+        </ion-item-divider>
+        <ion-item-divider *ngIf="group.Type==1&&group.Items.length>0" tappable (click)="toggleGroup(group.Type)">
+            {{ 'FavoritePage.FavoriteOrders' | translate }}
+            <span class="item-options">
+                <ion-icon small [name]="group.Expaned?'arrow-up-outline':'arrow-down-outline'"></ion-icon>
+            </span>
+        </ion-item-divider>
+        <ion-item-divider *ngIf="group.Type==2&&group.Items.length>0" tappable (click)="toggleGroup(group.Type)">
+            {{ 'FavoritePage.FavoriteItems' | translate }}
+            <span class="item-options">
+                <ion-icon small [name]="group.Expaned?'arrow-up-outline':'arrow-down-outline'"></ion-icon>
+            </span>
+        </ion-item-divider>
+        <div *ngIf="group.Expaned">
+            <ion-item-sliding *ngFor="let item of group.Items;let itemIndex=index">
+                <ion-item (click)="openPage(item)">
+                    <h2>{{item.CustomerName}}</h2>
+                    <p *ngIf="group.Type==1">{{item.SalesOrderNumber}}</p>
+                    <p *ngIf="group.Type==2">{{item.SalesOrderNumber}}-{{item.SalesOrderItemNumber}}</p>
+                </ion-item>
+                <ion-item-options>
+                    <button ion-button large icon-only color="danger" (click)="deleteFavorite(groupIndex,itemIndex,item)">
+                        <ion-icon name="ios-close-outline"></ion-icon>
+                    </button>
+                </ion-item-options>
+            </ion-item-sliding>
+        </div>
+    </ion-item-group>
+</ion-list>

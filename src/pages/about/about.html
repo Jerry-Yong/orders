@@ -1,0 +1,35 @@
+<!--
+  Generated template for the AboutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="primary">
+        <button left ion-button menuToggle icon-only *ngIf="isSignIn">
+            <ion-icon name='menu'></ion-icon>
+        </button>
+        <ion-title>{{ 'AboutPage.Title' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="qrcode">
+        <!-- <img src="assets/images/qrcode.png"> -->
+        <qr-code [value]="installUrl" [canvas]="false" [size]="1000" [padding]="30"></qr-code>
+        <span>iOrders IAMA V{{currentVersionNumber}}</span>
+        <div style="height:5px;"></div>
+        <span style="font-size:14px;color:#4a4a4a;padding:0px 5px;">
+            {{ 'AboutPage.ScanQRCodeTip' | translate }}
+        </span>
+    </div>
+    <ion-list>
+        <button ion-item (click)="openIntroductionPage()">{{ 'AboutPage.Introduction' | translate }}</button>
+        <button ion-item (click)="openFAQPage()">{{ 'AboutPage.FAQ' | translate }}</button>
+        <ion-item *ngIf="!isSignIn">
+            <ion-label>{{ 'AboutPage.Language' | translate }}</ion-label>
+            <ion-select [(ngModel)]="setting.Language" multiple="false" okText="{{ 'OKButtonText' | translate }}" cancelText="{{ 'CancelButtonText' | translate }}" (ionChange)="changeSetting()">
+                <ion-option *ngFor="let lang of languages" [value]="lang.Value">{{lang.Name}}</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,17 @@
+page-about {
+    .content-ios{
+        background-color: #f0f0f0;
+    }
+    .qrcode{
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .qrcode img{   
+        width: 190px;
+        height: 190px;
+        display: block;
+        margin: 36px auto 10px;
+    }
+}

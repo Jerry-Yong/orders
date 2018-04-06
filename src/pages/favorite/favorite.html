@@ -1,0 +1,22 @@
+<!--
+  Generated template for the FavoritePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="primary">
+        <button left ion-button menuToggle icon-only>
+            <ion-icon name='menu'></ion-icon>
+        </button>
+        <ion-searchbar [(ngModel)]="keyword" placeholder="{{ 'FavoritePage.Search' | translate }}" [showCancelButton]="false" (ionInput)="onInput($event)" cancelButtonText="{{'CancelButtonText'|translate}}" (ionCancel)="clearSearchResult()">
+        </ion-searchbar>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-refresher *ngIf="!showSearchResult" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-round-down" refreshingSpinner="dots"></ion-refresher-content>
+    </ion-refresher>
+    <favorite-list (toggleGroupClick)="toggleGroupClick($event)" *ngIf="!showSearchResult" [data]="favoriteList"></favorite-list>
+    <favorite-list *ngIf="showSearchResult" [data]="searchFavoriteList"></favorite-list>
+</ion-content>

@@ -1,0 +1,26 @@
+page-sign-in {
+  .logo-container{
+    margin-top: 60px;
+  }
+  .form-header {
+  }
+  .form-header img {
+    width: 50%;
+    margin: auto 0;
+  }
+  .form-container {
+    background-color: #fff;
+    ion-icon {
+      font-size: 3.5rem;
+      min-width: 30px;
+      color: #c9c9cf;
+    }
+    ion-row {
+      border-bottom: 1px solid #f0f0f0;
+      margin: 0px 25px 0px;
+    }
+  }
+  .form-footer {
+    margin-top: 20px;
+  }
+}

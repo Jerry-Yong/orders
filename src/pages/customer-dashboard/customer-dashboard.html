@@ -1,0 +1,119 @@
+<!--
+  Generated template for the CustomerDashboardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-buttons start>
+            <button ion-button icon-only (click)="openMenu()">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>{{ 'CustomerDashboardPage.Title' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-round-down" refreshingSpinner="dots">
+        </ion-refresher-content>
+    </ion-refresher>
+    <div class="container">
+        <ion-grid class="grid-customer">
+            <ion-row>
+                <ion-col col-auto class="item-icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                </ion-col>
+                <ion-col>
+                    <div class="item-customer">
+                        <span style="color:gray;">{{data.CustomerCode}}</span>
+                        <span>{{data.CustomerName}}</span>
+                        <span>{{data.CustomerAddress}}</span>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row no-padding>
+                <ion-col no-padding>
+                    <div id="map" class="map"></div>
+                    <div class="map-navigation">
+                        <button ion-button icon-only clear (click)="navigation()">
+                            <ion-icon name="navigate-outline" color="primary"></ion-icon>
+                        </button>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col></ion-col>
+                <ion-col col-auto class="item-options">
+                    <ion-icon color="primary" name="share-outline" (click)="share(data)"></ion-icon>
+                    <ion-icon [color]="data.IsFavorite?'danger':'primary'" name="{{data.IsFavorite?'star':'star-outline'}}" (click)="favorite(data)"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-grid *ngIf="dataOrderReport" class="grid-order" no-padding>
+            <ion-row>
+                <div class="item-header">{{ 'CustomerDashboardPage.OrderCreatedFrom' | translate:{ startDate: formatDate(this.dataOrderReport.OrderStartDate),endDate:
+                    formatDate(this.dataOrderReport.OrderEndDate) } }}
+                </div>
+            </ion-row>
+            <ion-row class="line-bottom" (click)="openSalesOrderList(0)">
+                <ion-col>
+                    <div class="item">
+                        <b class="label-value" style="color:green;font-size: 1em;">{{dataOrderReport.TotalOrderCount | number:'1.0-3'}} </b>
+                        <span class="label">{{ 'CustomerDashboardPage.Orders' | translate }}</span>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div class="item">
+                        <b class="label-value" style="color:black;font-size: 1em;">{{dataOrderReport.TotalOrderItemCount | number:'1.0-3'}} </b>
+                        <span class="label">{{ 'CustomerDashboardPage.OrderItems' | translate }}</span>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div class="item">
+                        <b class="label-value" style="color:black;font-size: 1em;">{{dataOrderReport.TotalOrderProductCount | number:'1.0-3'}}</b>
+                        <span class="label">{{ 'CustomerDashboardPage.Products' | translate }}</span>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row class="line-bottom">
+                <ion-col class="line-right" (click)="openSalesOrderList(2)">
+                    <div class="item">
+                        <span class="label" text-left>{{ 'CustomerDashboardPage.CompletedOrders' | translate }}</span>
+                        <b class="label-value" style="color:green;font-size: 1em;">{{dataOrderReport.CompleteCount | number:'1.0-3'}} </b>
+                    </div>
+                </ion-col>
+                <ion-col (click)="openSalesOrderList(3)">
+                    <div class="item">
+                        <span class="label" text-left>{{ 'CustomerDashboardPage.UnCompletedOrders' | translate }}</span>
+                        <b class="label-value" style="color:red;font-size: 1em;">{{dataOrderReport.UnCompleteCount | number:'1.0-3'}}</b>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <div class="item-header">{{ 'CustomerDashboardPage.OrderHasProductsShipped' | translate }}</div>
+            </ion-row>
+            <ion-row class="line-bottom" (click)="openSalesOrderList(1)">
+                <ion-col>
+                    <div class="item">
+                        <b class="label-value" style="color:green;font-size: 1em;">{{dataOrderReport.ShippedOrderCount | number:'1.0-3'}} </b>
+                        <span class="label">{{ 'CustomerDashboardPage.ShippedOrders' | translate }}</span>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div class="item">
+                        <b class="label-value" style="color:black;font-size: 1em;">{{dataOrderReport.ShippedOrderItemCount | number:'1.0-3'}} </b>
+                        <span class="label">{{ 'CustomerDashboardPage.ShippedOrderItems' | translate }}</span>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div class="item">
+                        <b class="label-value" style="color:black;font-size: 1em;">{{dataOrderReport.ShippedOrderProductCount | number:'1.0-3'}}</b>
+                        <span class="label">{{ 'CustomerDashboardPage.ShippedProducts' | translate }}</span>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

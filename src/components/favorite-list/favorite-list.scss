@@ -1,0 +1,17 @@
+favorite-list {
+  ion-item-divider {
+      border-bottom: 0.55px solid #c8c7cc;
+  }
+  .item-options {
+    float: right;
+  }
+  .item-options>ion-icon {
+    margin: 0 5px 0 5px;
+  }
+  ion-item-options button {
+    width: 60px !important;
+    ion-icon {
+      font-size: 40px !important;
+    }
+  }
+}

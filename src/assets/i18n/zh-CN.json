@@ -1,0 +1,189 @@
+{
+    "AboutPage": {
+        "Title": "关于",
+        "ScanQRCodeTip": "请让您的同事用他们的手机扫描上面的二维码来获取iOrders IAMA应用。",
+        "Language": "语言",
+        "Introduction": "介绍",
+        "FAQ": "常见问题"
+    },
+    "CustomerDashboardPage": {
+        "Title": "客户信息",
+        "LoadCustomerDashboardFailedForFavorite":"无法获取客户名称，收藏失败",
+        "LoadCustomerDashboardFailedForNavigation":"无法获取客户地址，导航失败",
+        "LoadMapFailed": "地图加载失败",
+        "StartBaiduMap": "百度地图",
+        "StartAMap": "高德地图",
+        "StartGoogleMap": "谷歌地图",
+        "StartBaiduMapError": "尚未安装百度地图，无法进行导航",
+        "StartAMapError": "尚未安装高德地图，无法进行导航",
+        "StartGoogleMapError": "尚未安装谷歌地图，无法进行导航",
+        "OrderCreatedFrom": "订单创建从{{startDate}}到{{endDate}}",
+        "Orders": "订单数",
+        "OrderItems": "订单行数",
+        "Products": "产品数",
+        "OrderHasProductsShipped": "过去三个月已出货订单",
+        "ShippedOrders": "已出货数",
+        "ShippedOrderItems": "订单行数",
+        "ShippedProducts": "产品数",
+        "UnCompletedOrders": "未完成",
+        "CompletedOrders": "已完成"
+    },
+    "CustomerSearchPage": {
+        "Title": "iOrders IAMA",
+        "CustomerCode": "客户代码",
+        "PurchaseOrderNumber": "客户合同号",
+        "Or": "或",
+        "ABBEmployeeSignIn": "ABB员工登录",
+        "CustomerCodeRequired": "请填写客户代码",
+        "PurchaseOrderNumberRequired": "请填写客户订单号"
+    },
+    "FaqPage": {
+        "Title": "常见问题"
+    },
+    "FavoritePage": {
+        "Title": "我的收藏",
+        "Search": "搜索",
+        "FavoriteCustomer": "客户",
+        "FavoriteOrders": "销售订单",
+        "FavoriteItems": "销售订单行",
+        "NoData": "没有查找到数据"
+    },
+    "IntroductionPage": {
+        "Title": "介绍",
+        "Description":"iOrders IAMA是一个在手机上提供订单快速追踪的解决方案，通过使用这个手机应用，ABB的员工和客户可以很好的协作订单及物流管理。"
+    },
+    "QuickSearchPage": {
+        "Title": "快速搜索",
+        "CustomerName": "客户名称",
+        "SalesPerson": "销售人员",
+        "PurchaseOrderNumber": "客户合同号",
+        "SalesOrderNumber": "销售订单号",
+        "CustomerNameRequired": "客户名称不能为空",
+        "SalesPersonRequired": "销售人员不能为空",
+        "PurchaseOrderNumberRequired": "客户合同号不能为空",
+        "SalesOrderNumberRequired": "销售订单号不能为空",
+        "SearchHistory": "搜索历史",
+        "ClearHistory": "清空历史"
+    },
+    "SalesOrderPage": {
+        "Title": "销售订单",
+        "CustomerName": "客户名称",
+        "SalesOrderCreateDate": "订单创建日期",
+        "CountryOrArea": "国家或区域",
+        "SalesPerson": "销售人员",
+        "All": "所有",
+        "StartDate": "起始日期",
+        "EndDate": "结束日期",
+        "SalesOrderCreateDate1": "三个月",
+        "SalesOrderCreateDate2": "半年",
+        "SalesOrderCreateDate3": "半年到一年",
+        "SalesOrderCreateDate4": "一年以上",
+        "CustomerNameASC": "按客户名称升序",
+        "SalesOrderNumberDESC": "按订单号降序",
+        "SalesOrderNumberASC": "按订单号升序",
+        "OrderCreatedDateDESC": "按创建时间降序",
+        "OrderCreatedDateASC": "按创建时间升序",
+        "UnCompleted": "未完成",
+        "Completed": "已完成",
+        "NoData": "没有查找到数据"
+    },
+    "SalesOrderItemPage": {
+        "Title": "销售订单行",
+        "SalesOrderItemNumber": "销售订单行号",
+        "MeterCode": "选型编码",
+        "EstimatedExWorkDate": "预计出厂日期",
+        "StartDate": "起始日期",
+        "EndDate": "结束日期",
+        "EstimatedExWorkDate1": "过去一个月",
+        "EstimatedExWorkDate2": "下三个月",
+        "ShippedDate": "发货日期",
+        "ShippingDate1": "过去三个月",
+        "ShippingDate2": "过去半年",
+        "SalesOrderItemNumberDESC": "按订单行号降序",
+        "SalesOrderItemNumberASC": "按订单行号升序",
+        "EstimatedExWorkDateDESC": "按预计出厂日期降序",
+        "EstimatedExWorkDateASC": "按预计出厂日期升序",
+        "All": "所有",
+        "OnPlan": "计划中",
+        "WIP": "生产中",
+        "Finished": "已完成",
+        "Shipped": "已发货",
+        "PlanExWorkOn":"预计出厂时间",
+        "NoData": "没有查找到数据"
+    },
+    "SalesOrderItemDetailPage": {
+        "Manufacture": "制造商",
+        "MeterCode": "选型编码",
+        "CustomerName": "客户名称",
+        "CreatedDate": "工厂接单日期",
+        "ReleasedDate": "订单释放日期",
+        "EstimatedExworkDate": "预计出厂日期",
+        "RequiredDeliveryDate": "要求交货日期",
+        "TotalQuantity": "数量",
+        "FinishedQuantity": "入库数量",
+        "IntoWarehouseDate": "入库日期",
+        "ShippingQuantity": "出货数量",
+        "ShippingDate": "出货日期"
+    },
+    "SettingPage": {
+        "Title": "设置",
+        "Language": "语言",
+        "TouchID": "指纹识别",
+        "DefaultPage": "默认页"
+    },
+    "SignInPage": {
+        "Title": "iOrders IAMA",
+        "Email": "邮箱",
+        "Password": "密码",
+        "EmailRequired": "请填写邮箱",
+        "PasswordRequired": "请填写密码",
+        "SignInFailed": "邮箱或密码不正确",
+        "TokenExpired": "认证过期,请使用密码登录",
+        "EnableFingerprint": "下一次登录是否启用指纹识别进行登录?"
+    },
+    "Menu": {
+        "FavoritePage": "我的收藏",
+        "QuickSearchPage": "快速搜索",
+        "SettingPage": "设置",
+        "AboutPage": "关于",
+        "Logout": "登出"
+    },
+    "Common": {
+        "CheckForUpdate": "检查更新",
+        "AddFavoriteSuccess": "添加收藏成功",
+        "AddFavoriteFailed": "添加收藏失败",
+        "DeleteFavoriteSuccess": "取消收藏成功",
+        "DeleteFavoriteFailed": "取消收藏失败",
+        "ShareFailed": "分享失败",
+        "QRCodeScanFailed": "二维码无法识别",
+        "QRCodeFormatFailed": "二维码格式不正确",
+        "FingerprintTip":"请扫描指纹登录"
+    },
+    "Languages": [{
+        "Name": "英语",
+        "Value": "en-US"
+    }, {
+        "Name": "简体中文",
+        "Value": "zh-CN"
+    }],
+    "DefaultPages": [{
+        "Name": "快速搜索",
+        "Value": "QuickSearchPage"
+    }, {
+        "Name": "我的收藏",
+        "Value": "FavoritePage"
+    }],
+    "Loading": "加载中...",
+    "PullingText": "上拉刷新",
+    "RefreshingText": "刷新中...",
+    "CancelButtonText": "取消",
+    "YesButtonText": "是",
+    "OKButtonText": "确定",
+    "ResetButtonText": "重置",
+    "OkeyButtonText": "确定",
+    "InstallButtonText": "安装",
+    "TakePhoto": "拍照",
+    "SeletFromLibrary": "从相册选择",
+    "CheckVersionTitle":"发现新版本",
+    "TimeoutText":"请求超时"
+}

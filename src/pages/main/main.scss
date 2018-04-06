@@ -1,0 +1,23 @@
+page-main {
+    ion-menu {
+        .header-container {
+            overflow: inherit;
+            contain: none;
+        }
+        ion-toolbar span {
+            position: absolute;
+            top: 20px;
+            left: 21px;
+            width: 85px;
+            height: 95px;
+            display: block;
+            overflow: hidden;
+        }
+        ion-title {
+            padding: 0px 10px 1px 110px !important;
+        }
+        ion-content {
+            margin-top: 60px;
+        }
+    }
+}
